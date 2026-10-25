@@ -1,0 +1,1164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fnu Risha</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Fnu Risha, AI Product Manager. AI agents, LLM evaluation and automation for CRM and ERP platforms. Experience, skills and product reviews.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: four-view portfolio (Home, Experience, Product Reviews, Skills) behind a sticky ribbon. Deep navy ground with restrained teal/violet glow and a faint drawing grid; frosted panels; serif italic used sparingly for emphasis. Dark-first with a matching light palette. */
+:root {
+  --bg: #0A1220;
+  --bg-2: #0D182A;
+  --glow-a: rgba(56, 214, 176, 0.14);
+  --glow-b: rgba(124, 108, 255, 0.14);
+  --grid: rgba(148, 190, 230, 0.045);
+  --surface: rgba(19, 32, 51, 0.66);
+  --surface-hi: rgba(27, 43, 67, 0.8);
+  --ink: #E8EEF6;
+  --ink-2: #C9D4E2;
+  --muted: #95A7BC;
+  --line: rgba(160, 190, 225, 0.14);
+  --line-hi: rgba(110, 231, 200, 0.42);
+  --accent: #6EE7C8;
+  --accent-2: #2BB596;
+  --accent-soft: rgba(110, 231, 200, 0.11);
+  --violet: #B4A8FF;
+  --violet-soft: rgba(180, 168, 255, 0.13);
+  --warn: #F3A86B;
+  --warn-soft: rgba(243, 168, 107, 0.12);
+  --track: rgba(160, 190, 225, 0.10);
+  --btn-ink: #06231C;
+  --shadow: 0 20px 50px -26px rgba(0, 0, 0, 0.65);
+  --f-display: "Familjen Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --f-serif: "Instrument Serif", Georgia, "Times New Roman", serif;
+  --f-body: "IBM Plex Sans", "Segoe UI", Roboto, Arial, sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+  --radius: 16px;
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --bg: #EFF3F8; --bg-2: #E7EDF5;
+    --glow-a: rgba(43, 181, 150, 0.12); --glow-b: rgba(124, 108, 255, 0.10);
+    --grid: rgba(30, 60, 100, 0.045);
+    --surface: rgba(255, 255, 255, 0.78); --surface-hi: rgba(255, 255, 255, 0.95);
+    --ink: #0E1B2E; --ink-2: #26364C; --muted: #536479; --line: rgba(20, 45, 80, 0.12); --line-hi: rgba(18, 140, 112, 0.45);
+    --accent: #0E8C6E; --accent-2: #12A684; --accent-soft: rgba(14, 140, 110, 0.09);
+    --violet: #5B4FD6; --violet-soft: rgba(91, 79, 214, 0.09);
+    --warn: #C2611F; --warn-soft: rgba(194, 97, 31, 0.09);
+    --track: rgba(20, 45, 80, 0.07); --btn-ink: #FFFFFF;
+    --shadow: 0 20px 50px -30px rgba(20, 45, 80, 0.35);
+    color-scheme: light;
+  }
+}
+:root[data-theme="light"] {
+  --bg: #EFF3F8; --bg-2: #E7EDF5;
+  --glow-a: rgba(43, 181, 150, 0.12); --glow-b: rgba(124, 108, 255, 0.10);
+  --grid: rgba(30, 60, 100, 0.045);
+  --surface: rgba(255, 255, 255, 0.78); --surface-hi: rgba(255, 255, 255, 0.95);
+  --ink: #0E1B2E; --ink-2: #26364C; --muted: #536479; --line: rgba(20, 45, 80, 0.12); --line-hi: rgba(18, 140, 112, 0.45);
+  --accent: #0E8C6E; --accent-2: #12A684; --accent-soft: rgba(14, 140, 110, 0.09);
+  --violet: #5B4FD6; --violet-soft: rgba(91, 79, 214, 0.09);
+  --warn: #C2611F; --warn-soft: rgba(194, 97, 31, 0.09);
+  --track: rgba(20, 45, 80, 0.07); --btn-ink: #FFFFFF;
+  --shadow: 0 20px 50px -30px rgba(20, 45, 80, 0.35);
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+html { background: var(--bg); }
+body {
+  margin: 0; min-height: 100vh; color: var(--ink); font-family: var(--f-body); font-size: 16px; line-height: 1.65;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  -webkit-font-smoothing: antialiased;
+  background:
+    radial-gradient(900px 600px at 6% -10%, var(--glow-a), transparent 60%),
+    radial-gradient(800px 600px at 100% 8%, var(--glow-b), transparent 60%),
+    linear-gradient(var(--grid) 1px, transparent 1px) 0 0 / 48px 48px,
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px) 0 0 / 48px 48px,
+    linear-gradient(180deg, var(--bg), var(--bg-2));
+  background-attachment: fixed;
+}
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 30; background: var(--bg); }
+::selection { background: var(--accent); color: var(--btn-ink); }
+a { color: var(--accent); text-underline-offset: 3px; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+.wrap { max-width: 1140px; margin: 0 auto; }
+h1, h2, h3, h4 { font-family: var(--f-display); text-wrap: balance; margin: 0; letter-spacing: -0.015em; }
+p { margin: 0; }
+.serif { font-family: var(--f-serif); font-style: italic; font-weight: 400; letter-spacing: 0; }
+.label { font-family: var(--f-mono); font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+.glass {
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow);
+  -webkit-backdrop-filter: blur(14px) saturate(140%); backdrop-filter: blur(14px) saturate(140%);
+}
+
+/* ribbon */
+.ribbon {
+  position: sticky; top: calc(env(safe-area-inset-top, 0px) + 12px); z-index: 20; margin-top: 16px;
+  display: flex; justify-content: space-between; align-items: center; gap: 14px; flex-wrap: wrap;
+  padding: 8px 8px 8px 18px; border-radius: 999px;
+}
+.mark { font-family: var(--f-display); font-weight: 700; font-size: 17px; color: var(--ink); text-decoration: none; display: flex; align-items: center; gap: 10px; }
+.mark i { width: 28px; height: 28px; border-radius: 8px; display: grid; place-items: center; font-style: normal; font-size: 12px; color: var(--btn-ink); background: linear-gradient(135deg, var(--accent), var(--violet)); }
+.tabs { display: flex; gap: 2px; flex-wrap: wrap; }
+.tabs a { color: var(--muted); text-decoration: none; font-size: 14px; font-weight: 500; padding: 8px 16px; border-radius: 999px; }
+.tabs a:hover { color: var(--ink); background: var(--track); }
+.tabs a[aria-current="page"] { color: var(--btn-ink); background: linear-gradient(135deg, var(--accent), var(--accent-2)); }
+
+/* pages */
+.page { padding-block: 56px 72px; display: flex; flex-direction: column; gap: 56px; }
+.page[hidden] { display: none; }
+.page-head { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: 40px; align-items: end; }
+.page-head h1 { font-size: clamp(34px, 4.6vw, 54px); line-height: 1.04; font-weight: 700; }
+.page-head h1 .serif { color: var(--accent); font-size: 1.06em; }
+.page-head p { color: var(--muted); font-size: 17px; max-width: 62ch; }
+.eyebrow { display: block; margin-bottom: 12px; }
+.sub { display: flex; flex-direction: column; gap: 22px; }
+.sub > h2 { font-size: 26px; font-weight: 600; display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.sub > h2 small { font-family: var(--f-mono); font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); font-weight: 400; }
+
+/* home */
+.home-grid { display: grid; grid-template-columns: minmax(0, 360px) minmax(0, 1fr); gap: 36px; align-items: start; }
+.profile { padding: 28px; display: flex; flex-direction: column; gap: 18px; align-items: flex-start; }
+.photo { width: 100%; max-width: 100%; aspect-ratio: 4 / 5; border-radius: 14px; position: relative; overflow: hidden; background: linear-gradient(150deg, var(--accent-soft), var(--violet-soft)); border: 1px solid var(--line); display: grid; place-items: center; }
+.photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.photo .mono { font-family: var(--f-display); font-weight: 700; font-size: 64px; color: var(--accent); letter-spacing: -0.02em; }
+.photo .hint { position: absolute; bottom: 12px; left: 12px; right: 12px; text-align: center; font-family: var(--f-mono); font-size: 11px; color: var(--muted); }
+.profile h1 { font-size: 30px; font-weight: 700; line-height: 1.1; }
+.profile .role { color: var(--ink-2); font-size: 15px; margin-top: -10px; }
+.meta { display: flex; flex-direction: column; gap: 6px; font-size: 14px; color: var(--muted); width: 100%; }
+.meta div { display: flex; justify-content: space-between; gap: 12px; border-top: 1px solid var(--line); padding-top: 8px; }
+.meta b { color: var(--ink); font-weight: 500; text-align: right; }
+.socials { display: flex; gap: 8px; flex-wrap: wrap; width: 100%; }
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 16px; border-radius: 999px; font-weight: 600; font-size: 14px;
+  text-decoration: none; border: 1px solid transparent; cursor: pointer; font-family: var(--f-body);
+  background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: var(--btn-ink);
+}
+.btn.ghost { background: transparent; color: var(--ink); border-color: var(--line); }
+.btn.ghost:hover { border-color: var(--line-hi); }
+.btn svg { width: 16px; height: 16px; fill: currentColor; }
+.email-line { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-family: var(--f-mono); font-size: 13px; color: var(--ink-2); }
+.email-line span { user-select: all; }
+.copy { font-family: var(--f-mono); font-size: 12px; padding: 4px 10px; border-radius: 999px; border: 1px solid var(--line); background: transparent; color: var(--muted); cursor: pointer; }
+.copy:hover { color: var(--ink); border-color: var(--line-hi); }
+
+.intro { display: flex; flex-direction: column; gap: 28px; min-width: 0; }
+.intro-card { padding: 34px; display: flex; flex-direction: column; gap: 18px; }
+.intro-card h2 { font-size: clamp(28px, 3.4vw, 40px); line-height: 1.1; font-weight: 700; }
+.intro-card h2 .serif { color: var(--accent); font-size: 1.06em; }
+.intro-card p { font-size: 17.5px; color: var(--ink-2); max-width: 64ch; line-height: 1.72; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chips span { font-size: 13px; color: var(--ink-2); background: var(--track); border: 1px solid var(--line); border-radius: 999px; padding: 4px 12px; }
+.stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+.stat { padding: 20px; display: flex; flex-direction: column; gap: 6px; }
+.stat b { font-family: var(--f-display); font-size: 30px; font-weight: 700; line-height: 1; color: var(--accent); font-variant-numeric: tabular-nums; }
+.stat span { font-size: 13px; color: var(--muted); line-height: 1.45; }
+.teasers { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.teaser { padding: 20px; text-decoration: none; color: var(--ink); display: flex; flex-direction: column; gap: 8px; transition: border-color .2s, background .2s; }
+.teaser:hover { border-color: var(--line-hi); background: var(--surface-hi); }
+.teaser h3 { font-size: 17px; font-weight: 600; line-height: 1.3; }
+.teaser p { font-size: 14px; color: var(--muted); }
+.row-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.row-head h2 { font-size: 22px; font-weight: 600; }
+.row-head a { font-size: 14px; text-decoration: none; font-weight: 500; }
+
+/* experience */
+.job { padding: 32px; display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 32px; }
+.job-side { display: flex; flex-direction: column; gap: 8px; }
+.when { font-family: var(--f-mono); font-size: 13px; color: var(--accent); font-variant-numeric: tabular-nums; }
+.where { font-size: 14px; color: var(--muted); }
+.job-main { display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+.job-main h3 { font-size: 22px; font-weight: 600; line-height: 1.2; }
+.job-main .org { color: var(--ink-2); font-size: 15px; margin-top: -8px; }
+.job-main > p { color: var(--ink-2); max-width: 72ch; }
+.job-main ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 7px; max-width: 76ch; }
+.job-main li::marker { color: var(--accent); }
+.ai-note { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 12px; align-items: start; background: var(--accent-soft); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; font-size: 14.5px; color: var(--ink-2); }
+.ai-note .label { color: var(--accent); padding-top: 2px; }
+.cases { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.case { padding: 26px; display: flex; flex-direction: column; gap: 14px; min-width: 0; transition: border-color .2s, background .2s; }
+.case:hover { border-color: var(--line-hi); background: var(--surface-hi); }
+.case-top { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.pill { font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; padding: 4px 10px; border-radius: 999px; font-weight: 500; display: inline-flex; align-items: center; gap: 6px; }
+.pill::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+.pill.live { background: var(--accent-soft); color: var(--accent); }
+.pill.pilot { background: var(--violet-soft); color: var(--violet); }
+.case h3 { font-size: 20px; line-height: 1.25; font-weight: 600; }
+.pbi { display: grid; grid-template-columns: 70px minmax(0, 1fr); gap: 10px 14px; margin: 0; font-size: 14.5px; }
+.pbi dt { font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); padding-top: 3px; }
+.pbi dd { margin: 0; color: var(--ink-2); }
+.pbi dd.impact { font-weight: 600; color: var(--accent); }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; border-top: 1px solid var(--line); padding-top: 14px; }
+.tags span { font-family: var(--f-mono); font-size: 11.5px; color: var(--muted); background: var(--track); border-radius: 999px; padding: 3px 10px; }
+.edu { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.edu > div { padding: 22px 24px; border-left: 3px solid var(--accent); display: flex; flex-direction: column; gap: 4px; }
+.edu b { font-family: var(--f-display); font-size: 18px; font-weight: 600; }
+.edu span { color: var(--muted); font-size: 14px; }
+
+/* skills */
+.skill-groups { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.sg { padding: 26px; display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+.sg h3 { font-size: 19px; font-weight: 600; }
+.sg > p { font-size: 14px; color: var(--muted); margin-top: -6px; }
+.sk { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: 14px; padding-top: 12px; border-top: 1px solid var(--line); font-size: 14.5px; }
+.sk b { font-weight: 600; color: var(--ink); }
+.sk span { color: var(--muted); }
+.tools { padding: 26px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
+.tools h4 { font-size: 14px; font-weight: 600; color: var(--accent); margin-bottom: 8px; font-family: var(--f-body); }
+.tools ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 5px; font-size: 14.5px; color: var(--ink-2); }
+
+/* reviews index */
+.review-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.rcard { padding: 24px; text-decoration: none; color: var(--ink); display: flex; flex-direction: column; gap: 12px; transition: border-color .2s, background .2s, transform .2s; }
+.rcard:hover { border-color: var(--line-hi); background: var(--surface-hi); }
+.rcard .kicker { display: flex; justify-content: space-between; gap: 8px; }
+.rcard h3 { font-size: 20px; font-weight: 600; line-height: 1.25; }
+.rcard p { font-size: 14.5px; color: var(--muted); }
+.rcard .verdict { margin-top: auto; font-size: 13px; color: var(--ink-2); border-top: 1px solid var(--line); padding-top: 12px; }
+.rcard .verdict b { color: var(--accent); font-weight: 600; }
+.method { padding: 22px 26px; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 16px; align-items: start; font-size: 14.5px; color: var(--ink-2); }
+
+/* article */
+.article { display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: 40px; align-items: start; }
+.article-body { padding: 40px 44px; display: flex; flex-direction: column; gap: 26px; min-width: 0; }
+.back { font-size: 14px; text-decoration: none; font-weight: 500; align-self: flex-start; }
+.article-body h1 { font-size: clamp(30px, 4vw, 46px); line-height: 1.08; font-weight: 700; }
+.article-body .dek { font-size: 18px; color: var(--ink-2); max-width: 66ch; }
+.byline { font-family: var(--f-mono); font-size: 12px; color: var(--muted); letter-spacing: 0.06em; text-transform: uppercase; }
+.article-body h2 { font-size: 23px; font-weight: 600; padding-top: 8px; }
+.article-body h3 { font-size: 18px; font-weight: 600; }
+.article-body p, .article-body li { font-size: 16.5px; color: var(--ink-2); max-width: 70ch; line-height: 1.75; }
+.article-body ul, .article-body ol { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; }
+.article-body li::marker { color: var(--accent); }
+.article-body strong { color: var(--ink); }
+.tldr { border-left: 3px solid var(--accent); padding: 16px 20px; background: var(--accent-soft); border-radius: 0 12px 12px 0; }
+.tldr p { color: var(--ink); }
+.pc { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.pc > div { border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; display: flex; flex-direction: column; gap: 10px; }
+.pc h3 { font-size: 15px; font-family: var(--f-mono); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 500; }
+.pc .pro h3 { color: var(--accent); }
+.pc .con h3 { color: var(--warn); }
+.pc ul { gap: 8px; }
+.pc li { font-size: 15px; line-height: 1.6; }
+.bets { counter-reset: b; list-style: none; padding: 0 !important; }
+.bets li { display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 12px; counter-increment: b; }
+.bets li::before { content: counter(b); width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; font-family: var(--f-mono); font-size: 12px; color: var(--accent); border: 1px solid var(--line-hi); background: var(--accent-soft); margin-top: 2px; }
+.tablewrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; }
+table { border-collapse: collapse; width: 100%; font-size: 14.5px; }
+th, td { text-align: left; padding: 11px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-family: var(--f-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 500; }
+tr:last-child td { border-bottom: 0; }
+td { color: var(--ink-2); }
+.sources { font-size: 13px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 16px; display: flex; flex-direction: column; gap: 6px; }
+.sources a { word-break: break-word; }
+.aside { position: sticky; top: 96px; display: flex; flex-direction: column; gap: 16px; }
+.score { padding: 22px; display: flex; flex-direction: column; gap: 14px; }
+.score h3 { font-size: 15px; font-weight: 600; }
+.srow { display: flex; flex-direction: column; gap: 6px; font-size: 13.5px; }
+.srow div:first-child { display: flex; justify-content: space-between; color: var(--ink-2); }
+.srow div:first-child span { font-family: var(--f-mono); color: var(--accent); font-variant-numeric: tabular-nums; }
+.meter { height: 6px; border-radius: 99px; background: var(--track); overflow: hidden; }
+.meter i { display: block; height: 100%; border-radius: 99px; background: linear-gradient(90deg, var(--accent-2), var(--accent)); }
+.overall { display: flex; align-items: baseline; gap: 8px; border-top: 1px solid var(--line); padding-top: 12px; }
+.overall b { font-family: var(--f-display); font-size: 32px; color: var(--accent); line-height: 1; }
+.overall span { font-size: 13px; color: var(--muted); }
+.next { padding: 18px 22px; display: flex; flex-direction: column; gap: 8px; }
+.next a { text-decoration: none; font-size: 14.5px; font-weight: 500; }
+
+footer.foot { border-top: 1px solid var(--line); padding-block: 28px 40px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 13px; color: var(--muted); }
+footer.foot a { text-decoration: none; }
+
+@media (max-width: 980px) {
+  .home-grid, .page-head, .article { grid-template-columns: 1fr; }
+  .profile { flex-direction: row; flex-wrap: wrap; }
+  .photo { max-width: 220px; }
+  .aside { position: static; }
+  .review-grid, .teasers { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .job { grid-template-columns: 1fr; gap: 14px; }
+  .tools { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .ribbon { border-radius: 22px; }
+}
+@media (max-width: 680px) {
+  .page { padding-block: 36px 52px; gap: 40px; }
+  .profile { flex-direction: column; }
+  .photo { max-width: 100%; }
+  .cases, .skill-groups, .review-grid, .teasers, .edu, .pc { grid-template-columns: 1fr; }
+  .sk { grid-template-columns: 1fr; gap: 4px; }
+  .pbi { grid-template-columns: 1fr; gap: 2px; }
+  .pbi dd { margin-bottom: 8px; }
+  .intro-card, .article-body, .job { padding: 24px 20px; }
+  .tabs a { padding: 6px 10px; font-size: 13px; }
+  .ribbon { padding: 8px; }
+  .mark span { display: none; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .btn, .copy, .tabs a { transition: border-color .15s, color .15s, background .15s; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="ribbon glass">
+    <a class="mark" href="#home"><i>FR</i><span>Fnu Risha</span></a>
+    <nav class="tabs" aria-label="Pages">
+      <a href="#home" data-tab="home">Home</a>
+      <a href="#experience" data-tab="experience">Experience</a>
+      <a href="#reviews" data-tab="reviews">Product Reviews</a>
+      <a href="#skills" data-tab="skills">Skills</a>
+    </nav>
+  </header>
+
+  <!-- ============================ HOME ============================ -->
+  <main class="page" data-route="home">
+    <div class="home-grid">
+      <aside class="profile glass">
+        <div class="photo">
+          <img src="photo.jpg" alt="Fnu Risha" onerror="this.remove()">
+          <span class="mono">FR</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:14px;min-width:0;flex:1 1 220px">
+          <h1>Fnu Risha</h1>
+          <p class="role">AI Product Manager &middot; Agents, LLM evaluation, CRM &amp; ERP</p>
+          <div class="meta">
+            <div>Current role<b>Product Manager, Meriton</b></div>
+            <div>Based in<b>Dallas, TX</b></div>
+            <div>Experience<b>5+ years</b></div>
+            <div>Education<b>M.S. MIS, Texas A&amp;M</b></div>
+          </div>
+          <div class="socials">
+            <a class="btn" href="https://linkedin.com/in/risha1316" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V21H9z"/></svg>LinkedIn</a>
+            <a class="btn ghost" href="Fnu_Risha_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+          </div>
+          <div class="email-line"><span id="email-text">rishaa1612@gmail.com</span><button class="copy" id="copy-email" type="button">Copy</button></div>
+        </div>
+      </aside>
+
+      <div class="intro">
+        <section class="intro-card glass">
+          <span class="label">About</span>
+          <h2>Hi, I'm Risha.</h2>
+          <p>I'm an electrical engineer turned product manager with 5+ years building enterprise software and AI products. I began as a technology consultant at PwC, where I learned to sit with end users, understand their pain points, and turn them into solutions that were technically and functionally feasible. That curiosity brought me to Texas A&amp;M for a master's in Management Information Systems, a product internship at Dell, and a startup role at DM Clinical, where I built AVA, an AI assistant for clinical trials. Today at Meriton, I bring AI agents and automation into the CRM and ERP platforms that serve HVAC companies.</p>
+          <div class="chips"><span>AI agents and orchestration</span><span>LLM and RAG systems</span><span>Evaluation and quality gates</span><span>Human-in-the-loop design</span><span>Dynamics 365 CRM and F&amp;O</span><span>0-to-1 products</span></div>
+        </section>
+
+        <div class="stats">
+          <div class="stat glass"><b>500</b><span>users on Apti, my AI guidance layer for the CRM</span></div>
+          <div class="stat glass"><b>160+</b><span>hours saved each month by the email-to-bid agent</span></div>
+          <div class="stat glass"><b>90%</b><span>of 500+ monthly invoices posted with no human touch</span></div>
+          <div class="stat glass"><b>45%</b><span>fewer hallucinations after eval-gated releases</span></div>
+        </div>
+
+        <div class="sub">
+          <div class="row-head"><h2>Recent product reviews</h2><a href="#reviews">All reviews</a></div>
+          <div class="teasers">
+            <a class="teaser glass" href="#review-pm"><span class="label">Essay</span><h3>Why AI products still need product managers</h3><p>What AI removes from the PM job, and what it adds.</p></a>
+            <a class="teaser glass" href="#review-spotify"><span class="label">Review</span><h3>Spotify</h3><p>Best-in-class personalization with a control problem.</p></a>
+            <a class="teaser glass" href="#review-maps"><span class="label">Review</span><h3>Google Maps</h3><p>The default for getting around, and now a test case for AI in the car.</p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ========================= EXPERIENCE ========================= -->
+  <main class="page" data-route="experience" hidden>
+    <div class="page-head">
+      <div><span class="label eyebrow">Experience</span><h1>Work <span class="serif">experience</span></h1></div>
+      <p>Each role below notes how it built toward AI product work: choosing problems worth automating, defining what good output looks like, and getting people to adopt the result.</p>
+    </div>
+
+    <article class="job glass">
+      <div class="job-side"><span class="when">Nov 2024 to Present</span><span class="where">Irving, TX</span><span class="pill live" style="align-self:flex-start">Current</span></div>
+      <div class="job-main">
+        <h3>Product Manager, AI Systems &amp; ERP</h3>
+        <p class="org">Meriton, shared-service CRM and ERP for HVAC companies</p>
+        <p>I own a Microsoft Dynamics 365 CRM and ERP platform used by 7+ operating companies and lead a 25+ person cross-functional team of business analysts and developers from requirements through UAT. Meriton had no machine learning before I joined; I introduced AI by starting where hours were being lost to manual work, then building with a 4 to 5 person dev and infrastructure team.</p>
+        <div class="ai-note"><span class="label">AI relevance</span><span>I own the full AI product loop here: problem selection, prototype, model and prompt design, evaluation, human handoff rules, rollout and adoption metrics.</span></div>
+      </div>
+    </article>
+
+    <div class="cases">
+      <article class="case glass">
+        <div class="case-top"><span class="label">AI hub</span><span class="pill pilot">Pilot</span></div>
+        <h3>One place from AI idea to delivered project</h3>
+        <dl class="pbi">
+          <dt>Problem</dt><dd>AI ideas, project requests and know-how were scattered across email, chats and one-off tools, with no view of what was requested, approved or already built.</dd>
+          <dt>Built</dt><dd>Prototyped the UI and end-to-end flow in Lovable, then built it on Power Apps and Azure: intake, auto-triage by effort, severity, team, budget and area, leadership approval, project tracking, newsletter, community, knowledge base and a shared GPT and skills library.</dd>
+          <dt>Impact</dt><dd class="impact">200 submissions from 140 users in 3 months; now piloting with 60 enterprise and transformation users.</dd>
+        </dl>
+        <div class="tags"><span>Lovable</span><span>Power Apps</span><span>Azure</span><span>0-to-1</span></div>
+      </article>
+      <article class="case glass">
+        <div class="case-top"><span class="label">Apti</span><span class="pill live">Live</span></div>
+        <h3>Guided workflows and an AI assistant inside the CRM</h3>
+        <dl class="pbi">
+          <dt>Problem</dt><dd>Users got stuck on multi-step CRM processes and relied on the helpdesk to finish them; onboarding new users was slow.</dd>
+          <dt>Built</dt><dd>An overlay for Microsoft Dynamics CRM with guided processes, in-context tooltips and a built-in AI assistant for CRM questions.</dd>
+          <dt>Impact</dt><dd class="impact">500 users; process-error helpdesk requests down 10x; faster onboarding.</dd>
+        </dl>
+        <div class="tags"><span>Dynamics 365 CRM</span><span>AI assistant</span><span>Adoption</span></div>
+      </article>
+      <article class="case glass">
+        <div class="case-top"><span class="label">Bid agent</span><span class="pill live">Live</span></div>
+        <h3>From bid-request email to CRM opportunity</h3>
+        <dl class="pbi">
+          <dt>Problem</dt><dd>Bid requests arrived by email and someone retyped details already sitting in the message.</dd>
+          <dt>Built</dt><dd>An agent on Power Automate and Azure Logic Apps that reads the email, extracts scope and pricing, drafts the bid and creates the CRM opportunity, plus an ML bid-rating model that scores bids on credit, safety and relationship history.</dd>
+          <dt>Impact</dt><dd class="impact">Bid entry from 1 hour to 10 minutes across 200+ bids a month, over 160 hours saved monthly.</dd>
+        </dl>
+        <div class="tags"><span>Agents</span><span>Logic Apps</span><span>ML scoring</span></div>
+      </article>
+      <article class="case glass">
+        <div class="case-top"><span class="label">Invoice agent</span><span class="pill live">Live</span></div>
+        <h3>Invoices that post and clear themselves</h3>
+        <dl class="pbi">
+          <dt>Problem</dt><dd>Invoices waited in a queue for manual posting and clearing, and CRM to ERP errors were chased by hand.</dd>
+          <dt>Built</dt><dd>Linked Dynamics 365 Finance &amp; Operations automations end to end: an agent posts and clears invoices and routes only exceptions and bad data to a person, on a CRM-ERP integration framework.</dd>
+          <dt>Impact</dt><dd class="impact">90% of 500+ monthly invoices touch-free; integration errors down 83% (30 to 5 a week) at a 98% SLA.</dd>
+        </dl>
+        <div class="tags"><span>F&amp;O</span><span>Human-in-the-loop</span><span>Integration</span></div>
+      </article>
+      <article class="case glass">
+        <div class="case-top"><span class="label">Equipment codes</span><span class="pill live">Live</span></div>
+        <h3>Sales estimates in hours instead of a day</h3>
+        <dl class="pbi">
+          <dt>Problem</dt><dd>Reps built equipment codes by hand for each estimate, working through geography and field-service rules.</dd>
+          <dt>Built</dt><dd>An app that works on client data and generates the right equipment codes for each location and service type.</dd>
+          <dt>Impact</dt><dd class="impact">Used by 30 to 40 reps; estimating time cut from about 1 day to 1 to 2 hours.</dd>
+        </dl>
+        <div class="tags"><span>Power Apps</span><span>Field service</span><span>Sales tooling</span></div>
+      </article>
+      <article class="case glass">
+        <div class="case-top"><span class="label">LLM layer</span><span class="pill live">Live</span></div>
+        <h3>Grounded answers, gated by evaluation</h3>
+        <dl class="pbi">
+          <dt>Problem</dt><dd>Early AI answers on invoice and billing questions sounded confident but did not always match the source record.</dd>
+          <dt>Built</dt><dd>An LLM and RAG layer on Azure OpenAI with a prompt framework, a 200+ scenario evaluation suite (BLEU/ROUGE and groundedness checks) and deployment gates that block a release when quality slips.</dd>
+          <dt>Impact</dt><dd class="impact">60% of manual workflows automated; hallucinations down 45%.</dd>
+        </dl>
+        <div class="tags"><span>Azure OpenAI</span><span>RAG</span><span>Evals</span></div>
+      </article>
+    </div>
+
+    <article class="job glass">
+      <div class="job-side"><span class="when">Jun 2024 to Oct 2024</span><span class="where">Houston, TX</span></div>
+      <div class="job-main">
+        <h3>Product Manager</h3>
+        <p class="org">DM Clinical Research, clinical trials startup</p>
+        <ul>
+          <li>Led 0-to-1 development of a clinical payment and patient-recruitment module for an enterprise AI product, improving patient onboarding by 15% and reducing overbooking by 8% within 4 months.</li>
+          <li>Built and shipped AVA, an AI assistant for clinical trial patients, end to end, defining requirements and success metrics with internal and external stakeholders; patient engagement rose 18%.</li>
+          <li>Ran 20+ site interviews and delivered Figma-based UX improvements that raised user engagement by 26%.</li>
+        </ul>
+        <div class="ai-note"><span class="label">AI relevance</span><span>My first AI product shipped end to end: conversational design, success metrics and measuring real engagement in a regulated setting.</span></div>
+      </div>
+    </article>
+
+    <article class="job glass">
+      <div class="job-side"><span class="when">May 2023 to Aug 2023</span><span class="where">Round Rock, TX</span></div>
+      <div class="job-main">
+        <h3>Product Manager Intern</h3>
+        <p class="org">Dell Technologies</p>
+        <ul>
+          <li>Drove 0-to-1 delivery of an AI-powered total-cost-of-ownership tool with engineering and design; improved accuracy from 61% to 90% by leading a 3-person QA team and lifted customer NPS by 8 points.</li>
+          <li>Ran an OpenRAN competitive analysis that identified $3.8M in cost efficiencies; built customer segmentation that raised targeted marketing effectiveness by 12%.</li>
+        </ul>
+        <div class="ai-note"><span class="label">AI relevance</span><span>Treated model accuracy as a product metric: a structured QA process took the tool from 61% to 90% accuracy before customers relied on it.</span></div>
+      </div>
+    </article>
+
+    <article class="job glass">
+      <div class="job-side"><span class="when">Dec 2020 to Jun 2022</span><span class="where">Mumbai, India</span></div>
+      <div class="job-main">
+        <h3>Technical Product Manager</h3>
+        <p class="org">Zycus, procurement SaaS</p>
+        <ul>
+          <li>Owned backlog and roadmap for a procurement suite serving 50+ enterprise customers, prioritizing by business impact and contributing to $1.5M in incremental quarterly sales.</li>
+          <li>Wrote user stories and acceptance criteria that lifted sprint velocity by 10%.</li>
+        </ul>
+        <div class="ai-note"><span class="label">AI relevance</span><span>Procurement and source-to-pay domain knowledge that now shapes how I design bid and invoice agents.</span></div>
+      </div>
+    </article>
+
+    <article class="job glass">
+      <div class="job-side"><span class="when">Jul 2019 to Nov 2020</span><span class="where">Kolkata, India</span></div>
+      <div class="job-main">
+        <h3>Technology Consultant</h3>
+        <p class="org">PwC</p>
+        <ul>
+          <li>Worked directly with client end users to understand their pain points and translate them into Dynamics 365 ERP workflow improvements that fit technical and functional constraints.</li>
+          <li>Introduced Agile practices that improved team productivity by 20% and used SQL for insights that raised customer satisfaction by 6%.</li>
+        </ul>
+        <div class="ai-note"><span class="label">AI relevance</span><span>The ERP data models and workflows I learned here are the systems my AI agents now read from and write to.</span></div>
+      </div>
+    </article>
+
+    <div class="sub">
+      <h2>Education</h2>
+      <div class="edu">
+        <div class="glass"><b>M.S., Management Information Systems</b><span>Texas A&amp;M University, College Station, TX</span><span>August 2022 to May 2024</span></div>
+        <div class="glass"><b>B.Tech, Electrical Engineering</b><span>IIEST Shibpur, Kolkata, India</span><span>July 2015 to May 2019</span></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ======================= PRODUCT REVIEWS ====================== -->
+  <main class="page" data-route="reviews" hidden>
+    <div class="page-head">
+      <div><span class="label eyebrow">Product Reviews</span><h1>How I take <span class="serif">products</span> apart</h1></div>
+      <p>Independent product teardowns written the way I review my own work: who the product serves, what it does well, where it falls short, where AI changes the picture, and what I would build next. These are my opinions and are not affiliated with any company reviewed.</p>
+    </div>
+    <div class="method glass"><span class="label">Method</span><span>Each review scores five dimensions from 1 to 10: how well the product does its core job, discovery and personalization, AI execution, trust and user control, and fit with the business model. Facts cite public sources; scores and recommendations are my own assessment.</span></div>
+    <div class="review-grid">
+      <a class="rcard glass" href="#review-pm"><div class="kicker"><span class="label">Essay</span><span class="pill live">AI PM</span></div><h3>Why AI products still need product managers</h3><p>What AI removes from the PM job, what it adds, and the seven metrics an AI PM should own.</p><div class="verdict"><b>Thesis:</b> AI raises the bar for PMs rather than removing the need for them.</div></a>
+      <a class="rcard glass" href="#review-spotify"><div class="kicker"><span class="label">Consumer audio</span><span class="label">7.8 / 10</span></div><h3>Spotify</h3><p>The best personalization engine in consumer tech, with four AI front doors that do not share a memory.</p><div class="verdict"><b>Verdict:</b> Make personalization controllable, not just accurate.</div></a>
+      <a class="rcard glass" href="#review-maps"><div class="kicker"><span class="label">Navigation</span><span class="label">8.0 / 10</span></div><h3>Google Maps</h3><p>Gemini in navigation and Ask Maps turn the map into an agent. Driving and discovery need different quality bars.</p><div class="verdict"><b>Verdict:</b> The most trustworthy assistant wins, not the most talkative.</div></a>
+      <a class="rcard glass" href="#review-notes"><div class="kicker"><span class="label">Productivity</span><span class="label">7.0 / 10</span></div><h3>Apple Notes</h3><p>Effortless, private capture that keeps closing gaps. Its next step is letting Siri answer from your notes.</p><div class="verdict"><b>Verdict:</b> Become the private AI context store, not a Notion clone.</div></a>
+      <a class="rcard glass" href="#review-yelp"><div class="kicker"><span class="label">Local marketplace</span><span class="label">6.4 / 10</span></div><h3>Yelp</h3><p>Two decades of reviews, rebuilt as an assistant that books, orders and calls, while AI search competes for its traffic.</p><div class="verdict"><b>Verdict:</b> Win the hardest local job: hiring a service pro.</div></a>
+      <a class="rcard glass" href="#review-watch"><div class="kicker"><span class="label">Wearables</span><span class="label">7.6 / 10</span></div><h3>Apple Watch updates</h3><p>Hypertension alerts, sleep and readiness scores and an AI coach, on a battery that has barely moved.</p><div class="verdict"><b>Verdict:</b> Fix battery first, then turn signals into one daily brief.</div></a>
+
+    </div>
+  </main>
+
+  <!-- ============================ SKILLS ========================== -->
+  <main class="page" data-route="skills" hidden>
+    <div class="page-head">
+      <div><span class="label eyebrow">Skills</span><h1>Skills, with <span class="serif">evidence</span></h1></div>
+      <p>Every skill below is paired with where I used it, so it can be checked against the work rather than taken on faith.</p>
+    </div>
+    <div class="skill-groups">
+      <section class="sg glass">
+        <h3>AI product development</h3>
+        <p>Designing, evaluating and shipping AI that people rely on</p>
+        <div class="sk"><b>Agent design and orchestration</b><span>Bid and invoice agents on Power Automate and Azure Logic Apps, live in production</span></div>
+        <div class="sk"><b>LLM and RAG systems</b><span>Azure OpenAI layer with a prompt framework that automated 60% of manual workflows</span></div>
+        <div class="sk"><b>Evaluation and quality gates</b><span>200+ scenario suite, BLEU/ROUGE and groundedness checks, release gates; hallucinations down 45%</span></div>
+        <div class="sk"><b>Human-in-the-loop design</b><span>Invoice exceptions and bad data routed to people while 90% post touch-free</span></div>
+        <div class="sk"><b>AI assistants</b><span>Apti for 500 CRM users; AVA for clinical trial patients at DM Clinical</span></div>
+        <div class="sk"><b>Applied machine learning</b><span>Bid-rating model on credit, safety and relationship history; Dell TCO tool accuracy from 61% to 90%</span></div>
+      </section>
+      <section class="sg glass">
+        <h3>Product leadership</h3>
+        <p>Choosing the right problems and getting them adopted</p>
+        <div class="sk"><b>Discovery and user research</b><span>20+ site interviews at DM Clinical; working sessions with accounting, vendor management, field service and sales at Meriton</span></div>
+        <div class="sk"><b>0-to-1 products</b><span>AI hub, AVA, clinical payment module, Dell TCO tool</span></div>
+        <div class="sk"><b>Prioritization and roadmap</b><span>Zycus roadmap prioritized by business impact, contributing $1.5M in quarterly sales</span></div>
+        <div class="sk"><b>Cross-functional leadership</b><span>25+ person team of analysts and developers across 7+ operating companies</span></div>
+        <div class="sk"><b>Adoption and change management</b><span>Apti at 500 users; AI hub with 140 contributors and a 60-user pilot</span></div>
+        <div class="sk"><b>Metrics and experimentation</b><span>Before and after time studies on every launch (1 hour to 10 minutes per bid; 1 day to 1 to 2 hours per estimate); A/B testing</span></div>
+      </section>
+      <section class="sg glass">
+        <h3>Platforms and engineering fluency</h3>
+        <p>Enough depth to design with engineers, not just for them</p>
+        <div class="sk"><b>Microsoft Dynamics 365</b><span>Platform owner for CRM and Finance &amp; Operations across 7+ operating companies</span></div>
+        <div class="sk"><b>Power Platform</b><span>Power Apps and Power Automate builds with a 4 to 5 person dev and infra team</span></div>
+        <div class="sk"><b>Azure</b><span>Logic Apps integration framework (errors 30 to 5 a week at a 98% SLA); Azure OpenAI</span></div>
+        <div class="sk"><b>Integrations and APIs</b><span>CRM to ERP data flows; email to CRM opportunity pipeline</span></div>
+        <div class="sk"><b>Electrical engineering foundation</b><span>B.Tech from IIEST Shibpur: systems thinking and comfort with technical tradeoffs</span></div>
+      </section>
+      <section class="sg glass">
+        <h3>Data, prototyping and delivery</h3>
+        <p>Moving from idea to measured result quickly</p>
+        <div class="sk"><b>Rapid prototyping</b><span>Lovable for working prototypes; Figma and Miro for flows and UX</span></div>
+        <div class="sk"><b>Data and analytics</b><span>SQL, Power BI, Tableau, Sigma, Google Analytics</span></div>
+        <div class="sk"><b>Delivery</b><span>Agile and Scrum, PRDs, user stories, UAT; Azure DevOps, Jira, Confluence, Asana</span></div>
+        <div class="sk"><b>Market and competitive analysis</b><span>OpenRAN analysis at Dell identifying $3.8M in cost efficiencies</span></div>
+        <div class="sk"><b>Writing</b><span>Product reviews on this site; specs and success metrics for every launch</span></div>
+      </section>
+    </div>
+  </main>
+
+  <main class="page" data-route="review-pm" hidden>
+    <div class="article">
+      <article class="article-body glass">
+        <a class="back" href="#reviews">&larr; All product reviews</a>
+        <span class="label">Essay &middot; AI product management</span>
+        <h1>Why AI products still need product managers</h1>
+        <p class="dek">AI has made building cheaper. It has not made building the wrong thing any cheaper. The PM job is shifting from writing specs to defining what "good" means, setting the line between the model and the human, and owning cost, trust and adoption.</p>
+        <span class="byline">By Fnu Risha &middot; Product Manager, AI Systems</span>
+
+        <div class="tldr"><p><strong>Short version.</strong> AI removes a lot of PM busywork: first drafts, research synthesis, prototypes. It adds harder work that nobody else on the team is set up to own: choosing problems where AI is worth its error rate, writing the evaluation set that defines correct, designing what happens when the model is wrong, and proving the product is used and worth its running cost.</p></div>
+
+        <h2>The case against PMs, taken seriously</h2>
+        <p>The argument is real and worth stating fairly. A model can now draft a PRD in a minute, summarize fifty customer interviews, and produce a clickable prototype from a paragraph. Engineers with the same tools can go from idea to working feature without a handoff. Model capabilities change every few months, so a long roadmap ages quickly. If the PM role was mainly translating between business and engineering and keeping tickets moving, much of that role is shrinking.</p>
+        <p>I agree with that part. Where I disagree is the conclusion. The work that shrinks was never the valuable part of product management. The valuable part gets bigger with AI, because AI products fail in new and less visible ways.</p>
+
+        <h2>Where AI removes PM work, and where it adds it</h2>
+        <div class="pc">
+          <div class="pro"><h3>AI takes over</h3><ul>
+            <li>First drafts of specs, user stories and release notes</li>
+            <li>Synthesis of interviews, tickets and survey text</li>
+            <li>Working prototypes in hours (I prototype in Lovable before asking for budget)</li>
+            <li>Data pulls and quick analysis</li>
+            <li>Competitive scans and summaries</li>
+          </ul></div>
+          <div class="con"><h3>AI creates new PM work</h3><ul>
+            <li>Deciding which problems are worth a probabilistic system</li>
+            <li>Defining correct: the evaluation set and pass bar</li>
+            <li>Designing failure: what the user sees when the model is wrong</li>
+            <li>Balancing quality, latency and cost per task</li>
+            <li>Data access, permissions and governance</li>
+            <li>Trust, change management and adoption</li>
+          </ul></div>
+        </div>
+
+        <h2>Five things a PM owns in an AI product</h2>
+        <h3>1. The problem, chosen by where time is actually lost</h3>
+        <p>Most AI ideas start from the model ("we could use an LLM for this"). The good ones start from the work. At Meriton, the first agent I built came from watching people retype bid details that were already in an email. That one observation was worth more than any model benchmark: 200+ bids a month, an hour each, cut to 10 minutes. A PM's job is to find those spots and to say no to the many places where AI is impressive but not useful.</p>
+        <h3>2. The definition of correct, before anything is built</h3>
+        <p>Traditional software either works or throws an error. AI output can be fluent and wrong. Someone has to decide what a good answer is, collect real examples, and set the bar a release must clear. For our LLM layer, that meant a 200+ scenario evaluation suite with groundedness checks and deployment gates. The suite, not the prompt, is what cut hallucinations by 45%. Writing that suite is product work: it encodes what users need, not what the model can do.</p>
+        <h3>3. The boundary between the agent and the human</h3>
+        <p>Full automation is rarely the right target. Our invoice agent posts and clears 90% of invoices with no human touch, and sends exceptions and bad data to a person. Choosing that boundary is a judgment about the cost of being wrong: a misposted invoice costs more to unwind than a slower one costs to wait for. The PM decides where that line sits, how the handoff looks, and when to move it as the evaluation data improves.</p>
+        <h3>4. The economics of every task</h3>
+        <p>AI features have a running cost that traditional features do not. A model that is slightly better but several times more expensive per call can make a feature unprofitable at scale. A PM needs to know the cost per successful task, the latency users will accept, and when a smaller model or a rules-based step is the better product decision.</p>
+        <h3>5. Adoption, which is where most AI value is lost</h3>
+        <p>An accurate assistant nobody opens is worth nothing. Apti, the guidance layer I built on our CRM, reached 500 users because it lives inside the workflow people already use, not in a separate chat window. Getting there took training, feedback loops and visible wins for each team. Models do not do change management.</p>
+
+        <h2>The metrics an AI PM should own</h2>
+        <div class="tablewrap"><table>
+          <thead><tr><th>Metric</th><th>Why it matters</th></tr></thead>
+          <tbody>
+            <tr><td>Task success rate on the evaluation set</td><td>The release bar. If it drops, the release waits.</td></tr>
+            <tr><td>Human edit or override rate</td><td>The most honest signal of whether output is trusted in real use.</td></tr>
+            <tr><td>Touch-free rate</td><td>Share of cases finished with no person involved; shows where the boundary can move.</td></tr>
+            <tr><td>Time saved per task</td><td>Ties the feature to a business outcome people feel.</td></tr>
+            <tr><td>Cost per successful task</td><td>Keeps the feature profitable as usage grows.</td></tr>
+            <tr><td>Escalation precision</td><td>Of the cases sent to a person, how many really needed one.</td></tr>
+            <tr><td>Weekly active use and retention</td><td>Separates a demo from a product.</td></tr>
+          </tbody>
+        </table></div>
+
+        <h2>How the role is changing</h2>
+        <p>The PM who survives this shift is more technical and more hands-on. They read model traces and failure cases, write evaluation sets, prototype their own ideas, and talk about retrieval, context and cost with engineers in their terms. They spend less time on documents and status, and more time on judgment: which problem, what bar, what boundary, at what cost.</p>
+        <p>That is the job I do today, and it is why I think AI raises the bar for product managers rather than removing the need for them.</p>
+
+        <h2>Bottom line</h2>
+        <p>AI makes it easy to build something that demos well. Product managers are the people accountable for building something that is correct often enough, fails safely when it is not, costs less than the time it saves, and gets used. That accountability does not go away when the model gets better. It gets more important.</p>
+      </article>
+      <aside class="aside">
+        <div class="score glass">
+          <h3>In this essay</h3>
+          <div class="srow"><div>AI removes busywork</div></div>
+          <div class="srow"><div>AI adds judgment work</div></div>
+          <div class="srow"><div>Five PM-owned areas</div></div>
+          <div class="srow"><div>Seven metrics to own</div></div>
+        </div>
+        <div class="next glass"><span class="label">Read next</span><a href="#review-spotify">Spotify review</a><a href="#review-maps">Google Maps review</a><a href="#reviews">All reviews</a></div>
+      </aside>
+    </div>
+  </main>
+  <main class="page" data-route="review-spotify" hidden>
+    <div class="article">
+      <article class="article-body glass">
+        <a class="back" href="#reviews">&larr; All product reviews</a>
+        <span class="label">Product review &middot; Consumer audio</span>
+        <h1>Spotify: the best personalization engine in consumer tech, with a control problem</h1>
+        <p class="dek">Spotify's recommendation system is the product. Its AI features make that system talk back, but they are multiplying faster than they are coming together, and listener trust is now the constraint.</p>
+        <span class="byline">By Fnu Risha &middot; Reviewed October 2026</span>
+
+        <div class="tldr"><p><strong>Verdict.</strong> Spotify keeps winning on the core job: put the right audio in front of you with almost no effort. Its scale (788M monthly users and 306M subscribers as of Q3 2026) feeds better recommendations, which feed more listening. The weak spots are control and clarity: four overlapping AI entry points, AI-generated tracks that are hard to identify, and limited ways to tell the system what you do not want.</p></div>
+
+        <h2>Who it serves and the job it does</h2>
+        <p>Spotify serves two very different listeners. The lean-back listener wants music to start and keep matching their mood, at work, in the car or at the gym. The lean-in listener wants to discover, curate and share. Most product decisions are a trade-off between the two. Its AI work is an attempt to serve both with one system: the lean-back listener gets the DJ and auto-refreshing playlists, and the lean-in listener gets prompts and an editable taste profile.</p>
+
+        <h2>What changed in 2025 and 2026</h2>
+        <div class="tablewrap"><table>
+          <thead><tr><th>Feature</th><th>What it does</th><th>Shipped</th></tr></thead>
+          <tbody>
+            <tr><td>AI DJ voice and text requests</td><td>Ask the DJ for a mood or genre by voice, then by typing; Spanish requests added</td><td>May and Oct 2025</td></tr>
+            <tr><td>Lossless audio</td><td>Up to 24-bit/44.1 kHz FLAC included in Premium</td><td>Sept 2025</td></tr>
+            <tr><td>Prompted Playlist</td><td>Longer prompts, an explanation for each pick, scheduled refreshes</td><td>Jan 2026 (US, Canada)</td></tr>
+            <tr><td>Taste Profile</td><td>A view of what Spotify thinks you like, editable for US Premium</td><td>Mar 2026</td></tr>
+            <tr><td>Talk to Spotify (beta)</td><td>A conversational assistant for typed or spoken requests</td><td>Jul 2026, limited markets</td></tr>
+            <tr><td>Assistant integrations</td><td>Spotify inside ChatGPT, Claude and Meta's Muse agent</td><td>Oct 2025 to Sept 2026</td></tr>
+          </tbody>
+        </table></div>
+
+        <h2>Pros and cons</h2>
+        <div class="pc">
+          <div class="pro"><h3>What works</h3><ul>
+            <li><strong>Personalization at scale.</strong> Hundreds of millions of daily listening sessions train recommendations that competitors with smaller audiences struggle to match.</li>
+            <li><strong>Explainability is arriving.</strong> Prompted Playlist explains each pick, and Taste Profile shows the model's view of you. Both build trust.</li>
+            <li><strong>Distribution beyond the app.</strong> Integrations with AI assistants put Spotify wherever people ask for music.</li>
+            <li><strong>A stronger Premium bundle.</strong> Lossless and 15 hours of audiobooks a month add value that helps justify price increases.</li>
+            <li><strong>Profitable growth.</strong> Revenue grew 16% year over year in Q3 2026 at a 33% gross margin.</li>
+          </ul></div>
+          <div class="con"><h3>What does not</h3><ul>
+            <li><strong>Too many AI front doors.</strong> DJ, AI Playlist, Prompted Playlist and Talk to Spotify overlap. Users have to learn which one does what.</li>
+            <li><strong>AI-generated music is hard to spot.</strong> AI disclosures sit in credits and on artist profiles, not clearly on each track.</li>
+            <li><strong>Weak negative feedback.</strong> It is easier to tell Spotify what you like than to say "never this again" and have it stick across surfaces.</li>
+            <li><strong>Price sensitivity.</strong> The US Individual plan rose to $12.99 in 2026, after earlier increases.</li>
+            <li><strong>Lossless with limits.</strong> 44.1 kHz trails Apple Music and Tidal on paper, and lossless does not carry over Bluetooth.</li>
+          </ul></div>
+        </div>
+
+        <h2>The AI analysis</h2>
+        <p>Spotify's AI strategy is right in direction and messy in packaging. Each new surface solves a real problem: the DJ removes the effort of choosing, prompts let people describe a moment the old genre system could not, and Taste Profile gives users a way to correct the model. The issue is that each surface keeps its own context. A request to the DJ does not obviously shape the next Prompted Playlist, and a correction in Taste Profile is not visibly reflected in the DJ. From the listener's side, it is one product with four memories.</p>
+        <p>The second issue is trust. As AI-generated tracks grow, listeners and artists both want to know what they are hearing. Spotify adopted industry-standard AI disclosures and added spam filtering in 2025, which is the right foundation. The next step is making that information visible at the moment of listening, not buried in credits.</p>
+
+        <h2>Metrics I would watch</h2>
+        <div class="tablewrap"><table>
+          <thead><tr><th>Metric</th><th>Why</th></tr></thead>
+          <tbody>
+            <tr><td>Skip rate in the first 30 seconds of AI-generated sessions</td><td>The fastest signal that a recommendation missed</td></tr>
+            <tr><td>Share of listening started from a prompt or the DJ</td><td>Whether conversational surfaces are becoming habits or stay novelties</td></tr>
+            <tr><td>Taste Profile edits that change later sessions</td><td>Whether user control actually works</td></tr>
+            <tr><td>Saves from AI playlists versus editorial playlists</td><td>Quality of discovery, not just consumption</td></tr>
+            <tr><td>Premium churn after price changes, by cohort</td><td>Whether new features are offsetting price sensitivity</td></tr>
+          </tbody>
+        </table></div>
+
+        <h2>If I were the PM</h2>
+        <ol class="bets">
+          <li><div><strong>One assistant, one memory.</strong> Fold DJ requests, prompts and Talk to Spotify into a single conversational entry point that reads and writes to Taste Profile, so every correction carries across the app.</div></li>
+          <li><div><strong>Track-level AI labels.</strong> Show AI involvement on the now-playing screen and let listeners filter AI-generated music out of recommendations.</div></li>
+          <li><div><strong>A real "not for me" control.</strong> A negative signal that applies everywhere, with a visible confirmation of what changed.</div></li>
+        </ol>
+
+        <h2>Bottom line</h2>
+        <p>Spotify does not need more AI features. It needs its existing ones to share context and to show their work. The company that makes personalization feel controllable, not just accurate, will own the next stage of streaming, and Spotify is best placed to be that company.</p>
+
+        <div class="sources"><span class="label">Sources</span>
+          <a href="https://www.sec.gov/Archives/edgar/data/0001639920/000114036126040435/ef20084028_ex99-1.htm" target="_blank" rel="noopener">Spotify Q3 2026 results (Oct 22, 2026)</a>
+          <a href="https://techcrunch.com/2025/10/15/you-can-now-text-spotifys-ai-dj" target="_blank" rel="noopener">TechCrunch: text requests for AI DJ (Oct 2025)</a>
+          <a href="https://www.soundguys.com/spotify-rolls-out-lossless-audio-for-premium-users-144173/" target="_blank" rel="noopener">SoundGuys: Spotify lossless rollout (Sept 2025)</a>
+          <a href="https://techcrunch.com/2025/12/10/spotify-tests-more-personalized-ai-powered-prompted-playlists/" target="_blank" rel="noopener">TechCrunch: Prompted Playlists (Dec 2025)</a>
+          <a href="https://techcrunch.com/2025/09/25/spotify-updates-ai-policy-to-label-tracks-cut-down-on-spam" target="_blank" rel="noopener">TechCrunch: Spotify AI music policy (Sept 2025)</a>
+          <a href="https://www.bloomberg.com/news/articles/2026-01-15/spotify-raises-premium-subscription-prices-in-us-to-13-month" target="_blank" rel="noopener">Bloomberg: US price increase (Jan 2026)</a>
+        </div>
+      </article>
+      <aside class="aside">
+        <div class="score glass">
+          <h3>My scorecard</h3>
+          <div class="srow"><div>Core job<span>9</span></div><div class="meter"><i style="width:90%"></i></div></div>
+          <div class="srow"><div>Discovery and personalization<span>9</span></div><div class="meter"><i style="width:90%"></i></div></div>
+          <div class="srow"><div>AI execution<span>7</span></div><div class="meter"><i style="width:70%"></i></div></div>
+          <div class="srow"><div>Trust and user control<span>6</span></div><div class="meter"><i style="width:60%"></i></div></div>
+          <div class="srow"><div>Business model fit<span>8</span></div><div class="meter"><i style="width:80%"></i></div></div>
+          <div class="overall"><b>7.8</b><span>out of 10, my assessment</span></div>
+        </div>
+        <div class="next glass"><span class="label">Read next</span><a href="#review-maps">Google Maps</a><a href="#review-pm">Why AI products need PMs</a><a href="#reviews">All reviews</a></div>
+      </aside>
+    </div>
+  </main>
+  <main class="page" data-route="review-maps" hidden>
+    <div class="article">
+      <article class="article-body glass">
+        <a class="back" href="#reviews">&larr; All product reviews</a>
+        <span class="label">Product review &middot; Navigation and local discovery</span>
+        <h1>Google Maps: from a map you read to an agent you talk to</h1>
+        <p class="dek">With Gemini in navigation and Ask Maps, Google is turning its most used everyday app into a conversational assistant. The strategy is strong. The risks are accuracy, driver attention and an uneven rollout.</p>
+        <span class="byline">By Fnu Risha &middot; Reviewed October 2026</span>
+
+        <div class="tldr"><p><strong>Verdict.</strong> Maps has the best data asset in local discovery: hundreds of millions of places, hundreds of millions of reviews and Street View imagery. Putting Gemini on top of that data is the obvious move, and Google has made it fast. The product now has to prove that conversational answers are as reliable as the map underneath them, and that a richer driving view does not cost attention on the road.</p></div>
+
+        <h2>Who it serves and the job it does</h2>
+        <p>Maps does three jobs: get me there (navigation), help me decide where to go (discovery), and tell me what is happening (traffic, transit, hours). Navigation is a high-stakes, real-time job where errors are costly. Discovery is a lower-stakes, exploratory job where conversation is a natural fit. The 2025 and 2026 launches push AI into both, and they deserve different bars.</p>
+
+        <h2>What changed in 2025 and 2026</h2>
+        <div class="tablewrap"><table>
+          <thead><tr><th>Feature</th><th>What it does</th><th>Shipped</th></tr></thead>
+          <tbody>
+            <tr><td>Gemini in navigation</td><td>Hands-free, multi-step requests while driving; landmark-based directions; voice incident reports</td><td>Nov 2025 (US, Android first)</td></tr>
+            <tr><td>Ask Maps</td><td>Conversational search over 300M+ places and 500M+ reviews; trip planning from saved places</td><td>Mar 2026; 150+ countries by Aug 2026</td></tr>
+            <tr><td>Immersive Navigation</td><td>3D driving view with lanes, crosswalks and signals, route trade-off explanations, arrival previews</td><td>Mar 2026, phased US rollout</td></tr>
+            <tr><td>Ask Maps personalization</td><td>Conversation memory, Gmail and Calendar context, hotel price comparison, food ordering (US)</td><td>Aug 2026</td></tr>
+          </tbody>
+        </table></div>
+
+        <h2>Pros and cons</h2>
+        <div class="pc">
+          <div class="pro"><h3>What works</h3><ul>
+            <li><strong>Unmatched grounding data.</strong> Places, reviews and Street View give Gemini real facts to answer from, which is exactly what reduces hallucination.</li>
+            <li><strong>Landmark directions.</strong> "Turn after the gas station" matches how people actually give directions.</li>
+            <li><strong>Hands-free multi-step requests.</strong> Asking for a stop along the route without touching the phone is a real safety and convenience gain.</li>
+            <li><strong>Route trade-offs explained.</strong> Saying why a route was chosen builds trust in the recommendation.</li>
+            <li><strong>Integrity at scale.</strong> Google reports blocking or removing 292M+ policy-violating reviews and 13M+ fake business profiles, with Gemini helping.</li>
+          </ul></div>
+          <div class="con"><h3>What does not</h3><ul>
+            <li><strong>Uneven rollout.</strong> A reader poll in July 2026 found only about 10% had Immersive Navigation, and some Pixel owners lost it. Users cannot tell what they should have.</li>
+            <li><strong>Accuracy risk in conversation.</strong> Hands-on reports describe voice errors and answers that need a strong connection. In a car, a wrong answer is worse than no answer.</li>
+            <li><strong>Attention cost.</strong> A richer 3D view and a chatty assistant can pull eyes and focus from the road.</li>
+            <li><strong>Data trust.</strong> A 2025 bug wiped some users' Timeline history after the move to on-device storage.</li>
+            <li><strong>Interface density.</strong> Each new layer adds to an already crowded screen.</li>
+          </ul></div>
+        </div>
+
+        <h2>The AI analysis</h2>
+        <p>Maps is a textbook case for grounded AI: the model is only as good as the place data it retrieves, and Google has the best place data there is. Ask Maps is well matched to discovery, where people already think in sentences ("a quiet place for brunch near my hotel that takes reservations"). Here, conversation replaces many taps and filters.</p>
+        <p>Navigation is a different problem. The bar for an in-car assistant is not "helpful most of the time" but "never confidently wrong and never distracting." That calls for narrower behavior: short confirmations, clear fallbacks when connectivity drops, and conservative defaults for anything that changes the route. The biggest product risk is treating both jobs with the same assistant and the same tolerance for error.</p>
+
+        <h2>Metrics I would watch</h2>
+        <div class="tablewrap"><table>
+          <thead><tr><th>Metric</th><th>Why</th></tr></thead>
+          <tbody>
+            <tr><td>Ask Maps answer acceptance (tap, save, navigate)</td><td>Whether conversational answers lead to real decisions</td></tr>
+            <tr><td>Correction or repeat-request rate in navigation</td><td>The clearest sign the assistant misheard or misanswered</td></tr>
+            <tr><td>Interaction time per voice request while moving</td><td>A proxy for driver attention cost</td></tr>
+            <tr><td>Factual error rate on place answers (hours, location)</td><td>Grounding quality, audited against the source data</td></tr>
+            <tr><td>Feature availability by device and region</td><td>Rollout consistency that users can predict</td></tr>
+          </tbody>
+        </table></div>
+
+        <h2>If I were the PM</h2>
+        <ol class="bets">
+          <li><div><strong>Two quality bars.</strong> Separate evaluation and release gates for driving and discovery. In-car answers ship only when error and interaction-time thresholds are met.</div></li>
+          <li><div><strong>Show the evidence.</strong> Let Ask Maps answers cite what they are based on (for example, "based on 1,200 reviews mentioning quiet"), so users can judge confidence at a glance.</div></li>
+          <li><div><strong>A clear "what's new on my phone" page.</strong> Make staged rollouts visible so users know whether a feature is missing or not yet available to them.</div></li>
+        </ol>
+
+        <h2>Bottom line</h2>
+        <p>Google is moving Maps in the right direction and faster than anyone else can. The winner here will not be the most talkative assistant but the most trustworthy one. If Google holds navigation to a stricter bar than discovery, Maps becomes the default AI agent for the physical world.</p>
+
+        <div class="sources"><span class="label">Sources</span>
+          <a href="https://9to5google.com/2025/11/05/google-maps-gemini-navigation/" target="_blank" rel="noopener">9to5Google: Gemini in Maps navigation (Nov 2025)</a>
+          <a href="https://www.techcrunch.com/2026/03/12/google-maps-is-getting-an-ai-ask-maps-feature-and-upgraded-immersive-navigation/" target="_blank" rel="noopener">TechCrunch: Ask Maps and Immersive Navigation (Mar 2026)</a>
+          <a href="https://9to5google.com/2026/07/25/google-maps-immersive-navigation-android-auto-speedometer-rollout-more/" target="_blank" rel="noopener">9to5Google: Immersive Navigation rollout (Jul 2026)</a>
+          <a href="https://eftm.com/2026/08/google-rolls-out-gemini-powered-ask-maps-to-150-countries-including-australia-279055" target="_blank" rel="noopener">EFTM: Ask Maps expands to 150+ countries (Aug 2026)</a>
+          <a href="https://www.seroundtable.com/google-maps-spam-fighting-2025-41176.html" target="_blank" rel="noopener">Search Engine Roundtable: Maps spam fighting report (Apr 2026)</a>
+          <a href="https://www.malwarebytes.com/blog/news/2025/03/oops-google-accidentally-deletes-some-users-maps-timeline-data" target="_blank" rel="noopener">Malwarebytes: Timeline data loss (Mar 2025)</a>
+        </div>
+      </article>
+      <aside class="aside">
+        <div class="score glass">
+          <h3>My scorecard</h3>
+          <div class="srow"><div>Core job<span>9</span></div><div class="meter"><i style="width:90%"></i></div></div>
+          <div class="srow"><div>Discovery and personalization<span>8</span></div><div class="meter"><i style="width:80%"></i></div></div>
+          <div class="srow"><div>AI execution<span>8</span></div><div class="meter"><i style="width:80%"></i></div></div>
+          <div class="srow"><div>Trust and user control<span>7</span></div><div class="meter"><i style="width:70%"></i></div></div>
+          <div class="srow"><div>Business model fit<span>8</span></div><div class="meter"><i style="width:80%"></i></div></div>
+          <div class="overall"><b>8.0</b><span>out of 10, my assessment</span></div>
+        </div>
+        <div class="next glass"><span class="label">Read next</span><a href="#review-yelp">Yelp</a><a href="#review-spotify">Spotify</a><a href="#reviews">All reviews</a></div>
+      </aside>
+    </div>
+  </main>
+  <main class="page" data-route="review-notes" hidden>
+    <div class="article">
+      <article class="article-body glass">
+        <a class="back" href="#reviews">&larr; All product reviews</a>
+        <span class="label">Product review &middot; Productivity</span>
+        <h1>Apple Notes: the default that keeps getting better, quietly</h1>
+        <p class="dek">Apple Notes wins by being already there, fast and private. Each year it closes a gap with dedicated note apps. Its next opportunity is not more formatting. It is turning your notes into personal context for Apple's AI.</p>
+        <span class="byline">By Fnu Risha &middot; Reviewed October 2026</span>
+
+        <div class="tldr"><p><strong>Verdict.</strong> For capture and everyday reference, Apple Notes is hard to beat: it opens instantly, syncs across Apple devices and keeps data private by default. It now handles math, audio transcription, Markdown and note links. It still trails Notion and Obsidian on structure, and it stays locked to Apple devices. The biggest unanswered question is how well Siri and Apple Intelligence will use what people have written.</p></div>
+
+        <h2>Who it serves and the job it does</h2>
+        <p>Most people use Notes for capture: a list, a thought, a number to remember, a meeting jot. A smaller group uses it as a lightweight knowledge base. Apple has clearly chosen to serve the first group perfectly and the second group gradually, without adding the complexity that makes tools like Notion powerful but heavy.</p>
+
+        <h2>How it has grown</h2>
+        <div class="tablewrap"><table>
+          <thead><tr><th>Release</th><th>What Notes gained</th></tr></thead>
+          <tbody>
+            <tr><td>iOS 17 (2023)</td><td>Links between notes</td></tr>
+            <tr><td>iOS 18 and 18.1 (2024)</td><td>Math Notes, audio recording with live transcription, Writing Tools and recording summaries (newer devices)</td></tr>
+            <tr><td>iOS 26 and watchOS 26 (2025)</td><td>Markdown import and export; Notes on Apple Watch for viewing, checklists and quick capture</td></tr>
+            <tr><td>iOS 27 (Sept 2026)</td><td>Dividers, links to sections, Markdown paste and copy, Siri that can create or add to notes (beta)</td></tr>
+          </tbody>
+        </table></div>
+
+        <h2>Pros and cons</h2>
+        <div class="pc">
+          <div class="pro"><h3>What works</h3><ul>
+            <li><strong>Zero friction capture.</strong> It is on every Apple device, opens instantly and is reachable from the lock screen, Control Center and the watch.</li>
+            <li><strong>Privacy by default.</strong> Locked notes and Apple's on-device and Private Cloud Compute approach suit personal and work notes.</li>
+            <li><strong>Useful, not flashy, AI.</strong> Audio transcription and summaries solve a real problem: turning a meeting or lecture into text you can search.</li>
+            <li><strong>Math Notes.</strong> A small feature that shows how a familiar tool can surprise people.</li>
+            <li><strong>Getting more open.</strong> Markdown import, export and copy reduce lock-in fears.</li>
+          </ul></div>
+          <div class="con"><h3>What does not</h3><ul>
+            <li><strong>Apple only.</strong> There are no native Android or Windows apps, which rules it out for many mixed-device teams.</li>
+            <li><strong>Limited structure.</strong> No backlinks, databases, templates or plugins, which power users rely on in Notion and Obsidian.</li>
+            <li><strong>Uneven AI access.</strong> Apple Intelligence features need recent hardware, and Siri AI is not available in the EU at launch.</li>
+            <li><strong>Partial Markdown.</strong> Exports drop attachments, and there is no true Markdown editing mode.</li>
+            <li><strong>Watch capture is one-way.</strong> On the watch you can create notes and check items, but not edit existing text.</li>
+          </ul></div>
+        </div>
+
+        <h2>The AI analysis</h2>
+        <p>Competitors are moving AI from writing help to action. Notion's agents can work across a workspace, and Google Keep now uses Gemini for voice-based note-making. Apple's approach is different: it keeps AI close to the device and to the operating system. That is a real advantage, because Notes holds some of the most personal context a person has, and Apple can use it privately.</p>
+        <p>The opportunity is "ask my notes." People rarely remember where they wrote something, but they remember what it was about. A Siri that can answer "what did I note about the contractor's quote?" with a cited link to the right note would turn years of scattered notes into a personal knowledge base, without asking users to organize anything. The iOS 27 Siri integration starts with creating and appending notes; retrieval is the step that would matter most.</p>
+
+        <h2>Metrics I would watch</h2>
+        <div class="tablewrap"><table>
+          <thead><tr><th>Metric</th><th>Why</th></tr></thead>
+          <tbody>
+            <tr><td>Search success (search followed by opening a note)</td><td>Whether people can find what they wrote</td></tr>
+            <tr><td>Notes revisited after 30 days</td><td>Separates a knowledge base from a scratchpad</td></tr>
+            <tr><td>Transcriptions and summaries per active user</td><td>Adoption of the most practical AI features</td></tr>
+            <tr><td>Siri note actions completed without correction</td><td>Quality of the new assistant path</td></tr>
+            <tr><td>Markdown exports</td><td>An early signal of users preparing to leave</td></tr>
+          </tbody>
+        </table></div>
+
+        <h2>If I were the PM</h2>
+        <ol class="bets">
+          <li><div><strong>Private "ask my notes."</strong> Semantic search and answers across notes, run on device or in Private Cloud Compute, always linking to the source note.</div></li>
+          <li><div><strong>Backlinks, without the complexity.</strong> Show which notes link to the current one. It adds knowledge-base power with no new concepts to learn.</div></li>
+          <li><div><strong>Meeting to action.</strong> After a recorded meeting, offer a summary, action items and a checklist in one step, with reminders created on request.</div></li>
+        </ol>
+
+        <h2>Bottom line</h2>
+        <p>Apple Notes will never be Notion, and it should not try to be. Its advantage is that it is effortless and trusted with personal information. If Apple uses that trust to make notes searchable by meaning and useful to Siri, Notes becomes the most valuable AI context store most people own, without them changing how they write.</p>
+
+        <div class="sources"><span class="label">Sources</span>
+          <a href="https://www.macrumors.com/how-to/create-links-between-apple-notes/" target="_blank" rel="noopener">MacRumors: linking notes (2023)</a>
+          <a href="https://appleinsider.com/articles/24/06/13/record-summarize-and-transcribe-audio-with-apple-notes-on-ios-18" target="_blank" rel="noopener">AppleInsider: audio transcription in Notes (Jun 2024)</a>
+          <a href="https://appleinsider.com/inside/ios-26/tips/how-to-import-and-export-markdown-with-apple-notes-in-ios-26" target="_blank" rel="noopener">AppleInsider: Markdown in iOS 26 (2025)</a>
+          <a href="https://9to5mac.com/2025/10/31/watchos-26-brings-apple-notes-to-your-apple-watch/" target="_blank" rel="noopener">9to5Mac: Notes on Apple Watch (Oct 2025)</a>
+          <a href="https://9to5mac.com/2026/07/30/heres-everything-new-for-apple-notes-in-ios-27/" target="_blank" rel="noopener">9to5Mac: Apple Notes in iOS 27 (2026)</a>
+          <a href="https://notion.com/releases/2025-09-18" target="_blank" rel="noopener">Notion 3.0 release notes (Sept 2025)</a>
+        </div>
+      </article>
+      <aside class="aside">
+        <div class="score glass">
+          <h3>My scorecard</h3>
+          <div class="srow"><div>Core job<span>8</span></div><div class="meter"><i style="width:80%"></i></div></div>
+          <div class="srow"><div>Organization and retrieval<span>5</span></div><div class="meter"><i style="width:50%"></i></div></div>
+          <div class="srow"><div>AI execution<span>6</span></div><div class="meter"><i style="width:60%"></i></div></div>
+          <div class="srow"><div>Trust and user control<span>9</span></div><div class="meter"><i style="width:90%"></i></div></div>
+          <div class="srow"><div>Business model fit<span>7</span></div><div class="meter"><i style="width:70%"></i></div></div>
+          <div class="overall"><b>7.0</b><span>out of 10, my assessment</span></div>
+        </div>
+        <div class="next glass"><span class="label">Read next</span><a href="#review-watch">Apple Watch updates</a><a href="#review-pm">Why AI products need PMs</a><a href="#reviews">All reviews</a></div>
+      </aside>
+    </div>
+  </main>
+  <main class="page" data-route="review-yelp" hidden>
+    <div class="article">
+      <article class="article-body glass">
+        <a class="back" href="#reviews">&larr; All product reviews</a>
+        <span class="label">Product review &middot; Local marketplace</span>
+        <h1>Yelp: a review site rebuilding itself as an AI agent for local services</h1>
+        <p class="dek">Yelp's most valuable asset is two decades of local reviews. Its 2025 and 2026 launches try to turn that asset into an assistant that books, orders and calls on your behalf, while AI search threatens the traffic it was built on.</p>
+        <span class="byline">By Fnu Risha &middot; Reviewed October 2026</span>
+
+        <div class="tldr"><p><strong>Verdict.</strong> Yelp is making the right strategic bet: move from "read reviews" to "get it done," and lean into home services, where growth is. The execution is ambitious and early. Its biggest risks are outside its control: Google and AI assistants answering local questions before users reach Yelp, and long-standing doubts about how reviews are filtered.</p></div>
+
+        <h2>Who it serves and the job it does</h2>
+        <p>Yelp is a two-sided marketplace. Consumers want a trustworthy answer to "who should I use?" for a restaurant, a plumber or a salon. Businesses want qualified customers and pay Yelp for advertising and leads. The business has already shifted: in 2025, services advertising brought in $948M and grew 8%, while restaurants, retail and other advertising brought in $444M and fell 6%. Yelp's future is finding a contractor, not choosing a brunch spot.</p>
+
+        <h2>What changed in 2025 and 2026</h2>
+        <div class="tablewrap"><table>
+          <thead><tr><th>Feature</th><th>What it does</th><th>Shipped</th></tr></thead>
+          <tbody>
+            <tr><td>Menu Vision</td><td>Point the camera at a menu to see dish photos and reviews</td><td>Oct 2025</td></tr>
+            <tr><td>Yelp Host and Receptionist</td><td>AI phone agents that answer calls for restaurants and service businesses</td><td>Oct 2025</td></tr>
+            <tr><td>Yelp Assistant as a full tab</td><td>Books, orders, requests quotes across 450+ categories; integrates with Zocdoc, Vagaro and Calendly</td><td>Apr 2026</td></tr>
+            <tr><td>ChatGPT data partnership</td><td>Yelp reviews and photos power local answers in ChatGPT</td><td>Jul 2026</td></tr>
+            <tr><td>Check for Me</td><td>An AI voice agent calls a restaurant for the wait time and texts you back</td><td>Oct 2026</td></tr>
+          </tbody>
+        </table></div>
+
+        <h2>Pros and cons</h2>
+        <div class="pc">
+          <div class="pro"><h3>What works</h3><ul>
+            <li><strong>A real data moat.</strong> Years of detailed local reviews are exactly what AI assistants need, which is why OpenAI licensed them.</li>
+            <li><strong>From reading to doing.</strong> The Assistant now completes tasks, and it already drives about 10% of Request-a-Quote projects.</li>
+            <li><strong>Revenue from both sides of AI.</strong> AI phone agents for businesses (Yelp Host is at a 2.4M-calls-a-year run rate) create new revenue beyond ads.</li>
+            <li><strong>Focus on services.</strong> The product is following the part of the business that grows.</li>
+            <li><strong>Practical features.</strong> Menu Vision and Check for Me solve small, real annoyances.</li>
+          </ul></div>
+          <div class="con"><h3>What does not</h3><ul>
+            <li><strong>Traffic dependence.</strong> Google's Ask Maps answers local questions from 500M+ reviews in 150+ countries, often before users reach Yelp.</li>
+            <li><strong>Review trust.</strong> The "not recommended" filter has drawn criticism for years and remains hard for users and businesses to understand.</li>
+            <li><strong>Flat core advertising.</strong> Advertising revenue fell 3% in Q2 2026; growth is coming from newer revenue lines.</li>
+            <li><strong>Low trust in AI answers.</strong> Only 15% of consumers in a Yelp survey trust AI search "a lot."</li>
+            <li><strong>Agent-to-agent calls.</strong> When Yelp's AI calls a restaurant answered by another AI, reliability is untested.</li>
+          </ul></div>
+        </div>
+
+        <h2>The AI analysis</h2>
+        <p>Yelp faces the classic disruption choice: protect the destination or become the supplier. It is doing both. Licensing data to ChatGPT turns the review corpus into revenue even when users never visit Yelp. Building its own Assistant tries to keep high-intent users, especially for services, where getting a quote and booking a job is worth far more than a restaurant visit.</p>
+        <p>The right place to win is services. Finding a trustworthy contractor is a high-stakes, multi-step job: describe the problem, compare quotes, check reviews, schedule. That is exactly where an agent adds value and where general AI assistants are weakest, because they lack Yelp's business relationships and lead flow. The Hatch acquisition (AI lead management for service businesses) supports this: it strengthens the business side of the same loop.</p>
+        <p>Trust is the constraint. An AI that recommends a business is only as credible as the reviews underneath it. Yelp's opaque filter was a reputational issue before AI; inside an assistant that says "I recommend this plumber," it becomes a product risk.</p>
+
+        <h2>Metrics I would watch</h2>
+        <div class="tablewrap"><table>
+          <thead><tr><th>Metric</th><th>Why</th></tr></thead>
+          <tbody>
+            <tr><td>Assistant tasks completed per active user</td><td>Whether Yelp is becoming a place to get things done</td></tr>
+            <tr><td>Quote request to booked job rate</td><td>The value delivered to service businesses, and the basis for pricing</td></tr>
+            <tr><td>Share of sessions arriving from search engines versus direct</td><td>Exposure to AI search intermediating traffic</td></tr>
+            <tr><td>Agent call success rate for Check for Me</td><td>Reliability of voice agents in the real world</td></tr>
+            <tr><td>Business retention on AI phone products</td><td>Whether the new revenue lines stick</td></tr>
+          </tbody>
+        </table></div>
+
+        <h2>If I were the PM</h2>
+        <ol class="bets">
+          <li><div><strong>Own the services job end to end.</strong> From problem description to booked job and follow-up review, with quote comparison and status updates in one thread.</div></li>
+          <li><div><strong>Explain every recommendation.</strong> Have the Assistant cite the reviews behind each suggestion and show, in plain words, why some reviews are not counted.</div></li>
+          <li><div><strong>Price on outcomes.</strong> Offer service businesses pricing tied to booked jobs, not just leads, which aligns Yelp with the value its agent creates.</div></li>
+        </ol>
+
+        <h2>Bottom line</h2>
+        <p>Yelp is right that its reviews are worth more inside an agent than on a page. Its long-term position depends on owning the hardest local job, hiring a service professional, better than general AI assistants can, and on making its recommendations visibly trustworthy.</p>
+
+        <div class="sources"><span class="label">Sources</span>
+          <a href="https://www.yelp-ir.com/news/press-releases/news-release-details/2026/Yelp-Delivers-Record-Net-Revenue-in-2025-Accelerating-Investment-in-AI-Transformation/default.aspx" target="_blank" rel="noopener">Yelp FY2025 results (Feb 2026)</a>
+          <a href="https://www.sec.gov/Archives/edgar/data/0001345016/000134501626000059/yelpq22026ex992lettertos.htm" target="_blank" rel="noopener">Yelp Q2 2026 shareholder letter (Aug 2026)</a>
+          <a href="https://ppc.land/yelp-assistant-goes-full-service-book-order-and-schedule-in-one-chat/" target="_blank" rel="noopener">PPC Land: Yelp Assistant redesign (Apr 2026)</a>
+          <a href="https://techcrunch.com/2026/10/20/yelp-can-now-call-on-your-behalf-to-check-wait-times-at-a-restaurant/" target="_blank" rel="noopener">TechCrunch: Check for Me (Oct 2026)</a>
+          <a href="https://axios.com/2026/07/23/yelp-reviews-chatgpt-geo-partnership" target="_blank" rel="noopener">Axios: Yelp and ChatGPT (Jul 2026)</a>
+          <a href="https://eftm.com/2026/08/google-rolls-out-gemini-powered-ask-maps-to-150-countries-including-australia-279055" target="_blank" rel="noopener">EFTM: Google Ask Maps expansion (Aug 2026)</a>
+        </div>
+      </article>
+      <aside class="aside">
+        <div class="score glass">
+          <h3>My scorecard</h3>
+          <div class="srow"><div>Core job<span>7</span></div><div class="meter"><i style="width:70%"></i></div></div>
+          <div class="srow"><div>Discovery and personalization<span>7</span></div><div class="meter"><i style="width:70%"></i></div></div>
+          <div class="srow"><div>AI execution<span>7</span></div><div class="meter"><i style="width:70%"></i></div></div>
+          <div class="srow"><div>Trust and user control<span>5</span></div><div class="meter"><i style="width:50%"></i></div></div>
+          <div class="srow"><div>Business model fit<span>6</span></div><div class="meter"><i style="width:60%"></i></div></div>
+          <div class="overall"><b>6.4</b><span>out of 10, my assessment</span></div>
+        </div>
+        <div class="next glass"><span class="label">Read next</span><a href="#review-maps">Google Maps</a><a href="#review-pm">Why AI products need PMs</a><a href="#reviews">All reviews</a></div>
+      </aside>
+    </div>
+  </main>
+  <main class="page" data-route="review-watch" hidden>
+    <div class="article">
+      <article class="article-body glass">
+        <a class="back" href="#reviews">&larr; All product reviews</a>
+        <span class="label">Product review &middot; Wearables and health</span>
+        <h1>Apple Watch updates: a health platform growing steadily, held back by its battery</h1>
+        <p class="dek">The last two years of Apple Watch updates show a clear strategy: more sensing, more health insight, and an AI coach on the wrist. Each release adds real value. The upgrade story is weaker, because the daily experience, especially battery life, has barely moved.</p>
+        <span class="byline">By Fnu Risha &middot; Reviewed October 2026</span>
+
+        <div class="tldr"><p><strong>Verdict.</strong> Apple is using software and sensors to turn the watch into a long-term health monitor: hypertension notifications, sleep score, a new readiness score and better heart sensing. That is the right bet and a hard one for rivals to copy. But a 24-hour battery rating, features that arrive months after launch, and a familiar design make the yearly upgrade hard to justify for most owners.</p></div>
+
+        <h2>Who it serves and the job it does</h2>
+        <p>The watch serves three jobs: stay connected without the phone, train and stay active, and watch over my health. The third job is now the strategic center. It is the hardest to copy, it builds value over years of data, and it gives people a reason to keep wearing the watch every day and night.</p>
+
+        <h2>What changed in 2025 and 2026</h2>
+        <div class="tablewrap"><table>
+          <thead><tr><th>Release</th><th>Key additions</th></tr></thead>
+          <tbody>
+            <tr><td>watchOS 26 (Sept 2025)</td><td>Liquid Glass design, Workout Buddy AI voice coach, wrist flick gesture, Notes app</td></tr>
+            <tr><td>Series 11, Ultra 3, SE 3 (Sept 2025)</td><td>Hypertension notifications (FDA-cleared), sleep score, 5G; satellite on Ultra 3</td></tr>
+            <tr><td>Blood oxygen (Aug 2025)</td><td>Returned in the US in a redesigned form calculated on the iPhone</td></tr>
+            <tr><td>watchOS 27 (Sept 2026)</td><td>Siri AI beta, Workout Buddy without an iPhone, perimenopause support, one-hand Smart Stack gesture</td></tr>
+            <tr><td>Series 12 (Sept 2026)</td><td>New Health Sensing System, readiness score, heart rate every 5 seconds; still rated 24 hours</td></tr>
+          </tbody>
+        </table></div>
+
+        <h2>Pros and cons</h2>
+        <div class="pc">
+          <div class="pro"><h3>What works</h3><ul>
+            <li><strong>Health features with clinical weight.</strong> Hypertension notifications reached 150+ countries and work on several older models, not just the newest one.</li>
+            <li><strong>A coherent health story.</strong> Sleep score, readiness score and better heart sensing build toward a daily view of how your body is doing.</li>
+            <li><strong>AI that fits the context.</strong> Workout Buddy speaks during a workout, where the wrist and earbuds are the right interface.</li>
+            <li><strong>Long software support for health.</strong> Bringing hypertension alerts to Series 9 and later rewards existing owners.</li>
+            <li><strong>Ecosystem depth.</strong> Integration with iPhone, AirPods and Health remains the strongest in the category.</li>
+          </ul></div>
+          <div class="con"><h3>What does not</h3><ul>
+            <li><strong>Battery has not moved.</strong> Series 12 is still rated for 24 hours, while the Pixel Watch 5 is rated up to 40 and the Galaxy Watch 9 for 30.</li>
+            <li><strong>Features arrive late.</strong> Some Series 12 headline features were not available at launch and are promised later in 2026.</li>
+            <li><strong>Incremental feel.</strong> Reviewers describe the design as unchanged and several additions as catch-up.</li>
+            <li><strong>Regulatory friction.</strong> Blood oxygen was missing from US models for about 18 months, and Siri AI is not available in the EU.</li>
+            <li><strong>Older models dropped.</strong> watchOS 27 ended support for Series 6, 7 and 8, Ultra 1 and SE 2.</li>
+          </ul></div>
+        </div>
+
+        <h2>The AI analysis</h2>
+        <p>The watch is a strong place for AI, but not in the form of a chat window. Its value comes from continuous data and short, timely interventions: a coaching cue mid-run, a note that your sleep was poor and today should be lighter, an alert that a trend needs a doctor. Workout Buddy and the readiness score point in this direction.</p>
+        <p>The gap is synthesis. Apple now reports many separate signals (sleep score, readiness, heart rate variability, hypertension notifications, activity rings), each with its own screen. Users have to connect them. An AI layer that turns these into one plain-language daily recommendation, with the reasons behind it, would make the data far more useful. It also needs careful product design: a clear line between wellness guidance and anything that sounds like a medical judgment.</p>
+
+        <h2>Metrics I would watch</h2>
+        <div class="tablewrap"><table>
+          <thead><tr><th>Metric</th><th>Why</th></tr></thead>
+          <tbody>
+            <tr><td>Overnight wear rate</td><td>Sleep and readiness depend on it, and battery limits it</td></tr>
+            <tr><td>Health feature engagement after 90 days</td><td>Whether insights stay useful once the novelty fades</td></tr>
+            <tr><td>Hypertension notifications followed by a clinician visit</td><td>Real-world value and the right balance of alerts</td></tr>
+            <tr><td>Workout Buddy sessions per active user</td><td>Adoption of on-wrist AI coaching</td></tr>
+            <tr><td>Upgrade rate from devices 3+ years old</td><td>Whether new releases give owners a reason to switch</td></tr>
+          </tbody>
+        </table></div>
+
+        <h2>If I were the PM</h2>
+        <ol class="bets">
+          <li><div><strong>Make battery the headline.</strong> A multi-day mode that keeps sleep and heart tracking on would improve overnight wear, which is what the health strategy depends on.</div></li>
+          <li><div><strong>One daily health brief.</strong> Combine sleep, readiness, heart and activity into one short recommendation with clear reasons and a link to the data behind it.</div></li>
+          <li><div><strong>Ship features when the product ships.</strong> Hold launches until headline features are ready, or label them clearly as coming later, to protect trust.</div></li>
+        </ol>
+
+        <h2>Bottom line</h2>
+        <p>Apple Watch is becoming a serious health product, and the 2025 and 2026 updates move it forward in ways competitors cannot easily match. To turn that into upgrades, Apple needs to fix the everyday basics, battery first, and help users understand their own data instead of handing them more numbers.</p>
+
+        <div class="sources"><span class="label">Sources</span>
+          <a href="https://www.apple.com/newsroom/2025/06/watchos-26-delivers-more-personalized-ways-to-stay-active-and-connected" target="_blank" rel="noopener">Apple Newsroom: watchOS 26 (Jun 2025)</a>
+          <a href="https://9to5mac.com/2025/09/11/apple-watch-hypertension-alerts-feature-receives-fda-clearance/" target="_blank" rel="noopener">9to5Mac: hypertension notifications cleared (Sept 2025)</a>
+          <a href="https://techcrunch.com/2025/08/14/apples-blood-oxygen-monitoring-returns-to-its-latest-apple-watches" target="_blank" rel="noopener">TechCrunch: blood oxygen returns (Aug 2025)</a>
+          <a href="https://apple.com/newsroom/2026/09/introducing-apple-watch-series-12-with-the-all-new-health-sensing-system/" target="_blank" rel="noopener">Apple Newsroom: Apple Watch Series 12 (Sept 2026)</a>
+          <a href="https://www.macworld.com/article/3249459/apple-watch-series-12-review.html" target="_blank" rel="noopener">Macworld: Series 12 review (Oct 2026)</a>
+          <a href="https://www.eweek.com/news/pixel-watch-5-vs-galaxy-watch9/" target="_blank" rel="noopener">eWeek: Pixel Watch 5 vs Galaxy Watch 9 (2026)</a>
+        </div>
+      </article>
+      <aside class="aside">
+        <div class="score glass">
+          <h3>My scorecard</h3>
+          <div class="srow"><div>Core job<span>9</span></div><div class="meter"><i style="width:90%"></i></div></div>
+          <div class="srow"><div>Personalization<span>7</span></div><div class="meter"><i style="width:70%"></i></div></div>
+          <div class="srow"><div>AI execution<span>6</span></div><div class="meter"><i style="width:60%"></i></div></div>
+          <div class="srow"><div>Trust and user control<span>8</span></div><div class="meter"><i style="width:80%"></i></div></div>
+          <div class="srow"><div>Business model fit<span>8</span></div><div class="meter"><i style="width:80%"></i></div></div>
+          <div class="overall"><b>7.6</b><span>out of 10, my assessment</span></div>
+        </div>
+        <div class="next glass"><span class="label">Read next</span><a href="#review-notes">Apple Notes</a><a href="#review-spotify">Spotify</a><a href="#reviews">All reviews</a></div>
+      </aside>
+    </div>
+  </main>
+
+
+  <footer class="foot">
+    <span>Fnu Risha &middot; AI Product Manager &middot; Dallas, TX</span>
+    <span><a href="https://linkedin.com/in/risha1316" target="_blank" rel="noopener">LinkedIn</a> &middot; rishaa1612@gmail.com</span>
+  </footer>
+</div>
+
+<script>
+(function () {
+  var pages = Array.prototype.slice.call(document.querySelectorAll('[data-route]'));
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('[data-tab]'));
+  var names = pages.map(function (p) { return p.getAttribute('data-route'); });
+  function show(route, scroll) {
+    if (names.indexOf(route) === -1) route = 'home';
+    pages.forEach(function (p) { p.hidden = p.getAttribute('data-route') !== route; });
+    var tab = route.indexOf('review-') === 0 ? 'reviews' : route;
+    tabs.forEach(function (t) {
+      if (t.getAttribute('data-tab') === tab) t.setAttribute('aria-current', 'page'); else t.removeAttribute('aria-current');
+    });
+    var titles = { home: 'Fnu Risha', experience: 'Experience | Fnu Risha', reviews: 'Product Reviews | Fnu Risha', skills: 'Skills | Fnu Risha' };
+    var page = pages[names.indexOf(route)];
+    var h = page && page.querySelector('h1');
+    document.title = titles[route] || ((h ? h.textContent : 'Review') + ' | Fnu Risha');
+    if (scroll) window.scrollTo(0, 0);
+  }
+  function current() { return (location.hash || '#home').slice(1); }
+  window.addEventListener('hashchange', function () { show(current(), true); });
+  show(current(), false);
+
+  var btn = document.getElementById('copy-email');
+  if (btn) btn.addEventListener('click', function () {
+    var text = 'rishaa1612@gmail.com';
+    function done(m) { btn.textContent = m; setTimeout(function () { btn.textContent = 'Copy'; }, 1800); }
+    function selectIt() { var r = document.createRange(); r.selectNodeContents(document.getElementById('email-text')); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); done('Selected'); }
+    try { if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(function () { done('Copied'); }, selectIt); else selectIt(); } catch (e) { selectIt(); }
+  });
+})();
+</script>
+</body>
+</html>
